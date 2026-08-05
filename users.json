@@ -1,0 +1,46 @@
+[
+    {
+        "username": "anwar",
+        "total_games": 1,
+        "best_score": 35,
+        "total_score": 35,
+        "average_score": 35.0,
+        "favorite_category": "Docker",
+        "history": []
+    },
+    {
+        "username": "\u0634\u0649\udcd8anwar",
+        "total_games": 2,
+        "best_score": 35,
+        "total_score": 70,
+        "average_score": 35.0,
+        "favorite_category": "Docker",
+        "history": [
+            {
+                "category": "Docker",
+                "score": 35,
+                "date": "2026-08-05 19:54"
+            }
+        ]
+    },
+    {
+        "username": "\u0634\udcd9 anwar",
+        "total_games": 2,
+        "best_score": 35,
+        "total_score": 35,
+        "average_score": 17.5,
+        "favorite_category": "Docker",
+        "history": [
+            {
+                "category": "Docker",
+                "score": 35,
+                "date": "2026-08-05 20:12"
+            },
+            {
+                "category": "Docker",
+                "score": 0,
+                "date": "2026-08-05 20:13"
+            }
+        ]
+    }
+]

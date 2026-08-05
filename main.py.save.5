@@ -8,8 +8,7 @@ from questions import (
 from user import (
     login,
     update_user,
-    show_profile,
-    show_history
+    show_profile
 )
 
 from datetime import datetime
@@ -20,12 +19,10 @@ from score import save_score, show_scores, show_statistics
 def show_menu():
     print("\n========== CodeQuiz ==========")
     print("1. Start Quiz")
-    print("2. My Profile")
-    print("3. My History")
-    print("4. Categories")
-    print("5. High Scores")
-    print("6. Statistics")
-    print("7. Exit")
+    print("2. Categories")
+    print("3. High Scores")
+    print("4. Statistics")
+    print("5. Exit")
 
 
 def choose_category(questions):
@@ -101,34 +98,32 @@ def main():
 
     questions = load_questions()
 
-    username = input("Enter your username: ")
-
-    current_user = login(username)
-
     while True:
 
         show_menu()
 
         choice = input("\nChoose option: ")
 
+
         if choice == "1":
+
+            username = input("Username: ")
+
+            current_user = login(username)
+
 
             selected_questions, category = choose_category(
                 questions
             )
 
+
             selected_questions = choose_difficulty(
                 selected_questions
             )
 
+
             score = start_quiz(
                 selected_questions
-            )
-
-            save_score(
-                current_user["username"],
-                category,
-                score
             )
 
             current_user["total_games"] += 1
@@ -143,31 +138,50 @@ def main():
             if score > current_user["best_score"]:
                 current_user["best_score"] = score
 
+            current_user["history"].append(
+                {
+                    "category": category,
+                    "score": score,
+                    "date": datetime.now().strftime(
+                        "%Y-%m-%d %H:%M"
+                    )
+                }
+            )
+
+            update_user(current_user)
+
+            current_user["total_games"] += 1
+
+            current_user["total_score"] += score
+
+
+            current_user["average_score"] = (
+                current_user["total_score"]
+                /
+                current_user["total_games"]
+            )
+
+
+            if score > current_user["best_score"]:
+                current_user["best_score"] = score
+
 
             current_user["favorite_category"] = category
 
 
-            current_user["history"].append({
-                "category": category,
-                "score": score,
-                "date": datetime.now().strftime("%Y-%m-%d %H:%M")
-            })
+            update_user(
+                current_user
+            )
 
 
-            update_user(current_user)
+            save_score(
+                current_user["username"],
+                category,
+                score
+            )
 
 
         elif choice == "2":
-
-            show_profile(current_user)
-
-
-        elif choice == "3":
-
-            show_history(current_user)
-
-
-        elif choice == "4":
 
             print("\nAvailable Categories:")
 
@@ -175,27 +189,29 @@ def main():
                 print("-", category)
 
 
-        elif choice == "5":
+
+        elif choice == "3":
 
             show_scores()
 
 
-        elif choice == "6":
+
+        elif choice == "4":
 
             show_statistics()
 
 
-        elif choice == "7":
+
+        elif choice == "5":
 
             print("Bye 👋")
             break
 
 
+
         else:
 
             print("Invalid option!")
-
-
 
 if __name__ == "__main__":
     main()
