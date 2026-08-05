@@ -1,0 +1,150 @@
+from questions import (
+    load_questions,
+    get_categories,
+    filter_questions,
+    filter_by_difficulty
+)
+
+from quiz import start_quiz
+from score import save_score, show_scores, show_statistics
+
+
+def show_menu():
+    print("\n========== CodeQuiz ==========")
+    print("1. Start Quiz")
+    print("2. Categories")
+    print("3. High Scores")
+    print("4. Statistics")
+    print("5. Exit")
+
+
+def choose_category(questions):
+
+    categories = get_categories(questions)
+
+    print("\nChoose Category")
+
+    for index, category in enumerate(categories):
+        print(f"{index + 1}. {category}")
+
+    print(f"{len(categories)+1}. Mixed")
+
+    choice = int(input("\nYour choice: "))
+
+    if choice == len(categories)+1:
+        return questions, "Mixed"
+
+    selected = categories[choice-1]
+
+    return filter_questions(
+        questions,
+        selected
+    ), selected
+
+
+
+
+def choose_difficulty(questions):
+
+    print("\nChoose Difficulty")
+
+    print("1. 🟢 Easy")
+    print("2. 🟡 Medium")
+    print("3. 🔴 Hard")
+    print("4. Mixed")
+
+
+    choice = input("\nYour choice: ")
+
+
+    if choice == "1":
+        return filter_by_difficulty(
+            questions,
+            "easy"
+        )
+
+    elif choice == "2":
+        return filter_by_difficulty(
+            questions,
+            "medium"
+        )
+
+    elif choice == "3":
+        return filter_by_difficulty(
+            questions,
+            "hard"
+        )
+
+    else:
+        return questions
+
+
+
+
+def main():
+
+    print("""
+=================================
+      Welcome to CodeQuiz
+=================================
+""")
+
+    questions = load_questions()
+
+    while True:
+
+        show_menu()
+
+        choice = input("\nChoose option: ")
+
+
+        if choice == "1":
+
+            name = input("Your name: ")
+
+            selected_questions, category = choose_category(questions)
+
+            selected_questions = choose_difficulty(
+                selected_questions
+            )      
+            score = start_quiz(
+                selected_questions
+            )
+
+            save_score(
+                name,
+                category,
+                score
+            )
+
+
+        elif choice == "2":
+
+            print("\nAvailable Categories:")
+
+            for category in get_categories(questions):
+                print("-", category)
+
+
+        elif choice == "3":
+
+            show_scores()
+
+
+        elif choice == "4":
+
+            show_statistics()
+
+
+        elif choice == "5":
+
+            print("Bye 👋")
+            break
+
+
+        else:
+            print("Invalid option!")
+
+
+if __name__ == "__main__":
+    main()

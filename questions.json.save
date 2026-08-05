@@ -1,0 +1,366 @@
+[
+    {
+        "category": "Docker",
+        "difficulty": "easy",
+        "question": "What command lists running Docker containers?",
+        "options": [
+            "docker images",
+            "docker ps",
+            "docker run",
+            "docker start"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "easy",
+        "question": "Which command builds a Docker image?",
+        "options": [
+            "docker build",
+            "docker start",
+            "docker stop",
+            "docker pull"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Docker",
+        "difficulty": "easy",
+        "question": "Which command downloads an image from Docker Hub?",
+        "options": [
+            "docker push",
+            "docker pull",
+            "docker exec",
+            "docker run"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "medium",
+        "question": "Which file is used to build a Docker image?",
+        "options": [
+            "Dockerfile",
+            "docker.json",
+            "image.txt",
+            "container.txt"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Docker",
+        "difficulty": "medium",
+        "question": "Which Docker command creates a new container?",
+        "options": [
+            "docker run",
+            "docker create-image",
+            "docker new",
+            "docker start-image"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Docker",
+        "difficulty": "medium",
+        "question": "What is Docker Hub?",
+        "options": [
+            "A database",
+            "A container registry",
+            "A Linux command",
+            "A Dockerfile"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "hard",
+        "question": "What is a running instance of an image called?",
+        "options": [
+            "Volume",
+            "Container",
+            "Network",
+            "Dockerfile"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "hard",
+        "question": "Which Docker feature stores data outside containers?",
+        "options": [
+            "Images",
+            "Volumes",
+            "Networks",
+            "Tags"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "hard",
+        "question": "Which command shows container logs?",
+        "options": [
+            "docker history",
+            "docker logs",
+            "docker output",
+            "docker inspect-log"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Docker",
+        "difficulty": "hard",
+        "question": "Which file defines instructions for building an image?",
+        "options": [
+            "docker-compose.yml",
+            "Dockerfile",
+            "package.json",
+            "image.json"
+        ],
+        "answer": 1
+    },
+
+
+    {
+        "category": "Linux",
+        "difficulty": "easy",
+        "question": "Which command shows files in a directory?",
+        "options": [
+            "cd",
+            "ls",
+            "mkdir",
+            "touch"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Linux",
+        "difficulty": "easy",
+        "question": "Which command creates a new folder?",
+        "options": [
+            "mkdir",
+            "rm",
+            "cat",
+            "pwd"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "easy",
+        "question": "Which command prints text to the terminal?",
+        "options": [
+            "echo",
+            "write",
+            "print",
+            "show"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "medium",
+        "question": "Which command prints the current directory?",
+        "options": [
+            "pwd",
+            "cd",
+            "ls",
+            "echo"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "medium",
+        "question": "Which command removes a file?",
+        "options": [
+            "remove",
+            "delete",
+            "rm",
+            "erase"
+        ],
+        "answer": 2
+    },
+    {
+        "category": "Linux",
+        "difficulty": "medium",
+        "question": "Which command changes directory?",
+        "options": [
+            "cd",
+            "mv",
+            "cp",
+            "pwd"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "hard",
+        "question": "Which command displays running processes?",
+        "options": [
+            "ps",
+            "proc",
+            "run",
+            "process"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "hard",
+        "question": "Which command changes file permissions?",
+        "options": [
+            "chmod",
+            "chperm",
+            "permission",
+            "access"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Linux",
+        "difficulty": "hard",
+        "question": "What does SSH allow you to do?",
+        "options": [
+            "Edit images",
+            "Access remote machines",
+            "Create folders",
+            "Install Docker"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Linux",
+        "difficulty": "hard",
+        "question": "Which command shows network information?",
+        "options": [
+            "netstat",
+            "network",
+            "connect",
+            "ipconfig"
+        ],
+        "answer": 0
+    },
+
+
+    {
+        "category": "SQL",
+        "difficulty": "easy",
+        "question": "Which command is used to retrieve data?",
+        "options": [
+            "INSERT",
+            "DELETE",
+            "SELECT",
+            "UPDATE"
+        ],
+        "answer": 2
+    },
+    {
+        "category": "SQL",
+        "difficulty": "easy",
+        "question": "Which command adds new data?",
+        "options": [
+            "INSERT",
+            "SELECT",
+            "DROP",
+            "UPDATE"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "easy",
+        "question": "Which database language is SQL?",
+        "options": [
+            "Query language",
+            "Programming language",
+            "Markup language",
+            "Operating system"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "medium",
+        "question": "Which command modifies existing data?",
+        "options": [
+            "UPDATE",
+            "CREATE",
+            "SELECT",
+            "INSERT"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "medium",
+        "question": "Which command removes a table?",
+        "options": [
+            "DELETE",
+            "DROP",
+            "REMOVE",
+            "CLEAR"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "SQL",
+        "difficulty": "medium",
+        "question": "Which keyword filters SQL results?",
+        "options": [
+            "WHERE",
+            "FILTER",
+            "SEARCH",
+            "LIMITER"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "hard",
+        "question": "What does SQL stand for?",
+        "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "System Query Logic",
+            "Standard Question Language"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "hard",
+        "question": "Which JOIN returns matching rows from both tables?",
+        "options": [
+            "INNER JOIN",
+            "FULL JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "hard",
+        "question": "Which command creates a new table?",
+        "options": [
+            "CREATE TABLE",
+            "NEW TABLE",
+            "MAKE TABLE",
+            "ADD TABLE"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "SQL",
+        "difficulty": "hard",
+        "question": "Which constraint uniquely identifies rows?",
+        "options": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "UNIQUE TABLE",
+            "IDENTIFIER"
+        ],
+        "answer": 0
+    }
+]
