@@ -144,7 +144,6 @@ def main():
                 current_user["best_score"] = score
 
 
-            current_user["favorite_category"] = category
 
 
             current_user["history"].append({

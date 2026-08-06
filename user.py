@@ -27,7 +27,6 @@ def create_user(username):
         "best_score": 0,
         "total_score": 0,
         "average_score": 0,
-        "favorite_category": None,
         "history": []
     }
 
@@ -110,9 +109,6 @@ def show_profile(user):
         f"Average Score: {user['average_score']}"
     )
 
-    print(
-        f"Favorite Category: {user['favorite_category']}"
-    )
 
 
 def show_history(user):

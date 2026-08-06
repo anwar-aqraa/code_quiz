@@ -1,11 +1,11 @@
 [
     {
         "username": "anwar",
-        "total_games": 6,
+        "total_games": 11,
         "best_score": 35,
-        "total_score": 146,
-        "average_score": 24.333333333333332,
-        "favorite_category": "Docker",
+        "total_score": 224,
+        "average_score": 20.363636363636363,
+        "favorite_category": "Python",
         "history": [
             {
                 "category": "Docker",
@@ -31,6 +31,31 @@
                 "category": "Docker",
                 "score": 29,
                 "date": "2026-08-06 13:38"
+            },
+            {
+                "category": "Docker",
+                "score": 29,
+                "date": "2026-08-06 13:54"
+            },
+            {
+                "category": "Docker",
+                "score": 0,
+                "date": "2026-08-06 13:54"
+            },
+            {
+                "category": "Git",
+                "score": 14,
+                "date": "2026-08-06 14:21"
+            },
+            {
+                "category": "Python",
+                "score": 0,
+                "date": "2026-08-06 14:22"
+            },
+            {
+                "category": "Docker",
+                "score": 35,
+                "date": "2026-08-06 14:29"
             }
         ]
     },
@@ -68,5 +93,14 @@
                 "date": "2026-08-05 20:13"
             }
         ]
+    },
+    {
+        "username": "rlrl",
+        "total_games": 0,
+        "best_score": 0,
+        "total_score": 0,
+        "average_score": 0,
+        "favorite_category": null,
+        "history": []
     }
 ]
