@@ -119,8 +119,6 @@
         ],
         "answer": 1
     },
-
-
     {
         "category": "Linux",
         "difficulty": "easy",
@@ -241,8 +239,6 @@
         ],
         "answer": 0
     },
-
-
     {
         "category": "SQL",
         "difficulty": "easy",
@@ -360,6 +356,186 @@
             "FOREIGN KEY",
             "UNIQUE TABLE",
             "IDENTIFIER"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Git",
+        "difficulty": "easy",
+        "question": "Which command uploads changes to a remote repository?",
+        "options": [
+            "git push",
+            "git pull",
+            "git commit",
+            "git clone"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Git",
+        "difficulty": "easy",
+        "question": "Which command downloads changes from a remote repository?",
+        "options": [
+            "git push",
+            "git pull",
+            "git merge",
+            "git init"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Git",
+        "difficulty": "medium",
+        "question": "Which command creates a new Git repository?",
+        "options": [
+            "git start",
+            "git create",
+            "git init",
+            "git new"
+        ],
+        "answer": 2
+    },
+    {
+        "category": "Git",
+        "difficulty": "medium",
+        "question": "Which command saves changes locally in Git?",
+        "options": [
+            "git save",
+            "git commit",
+            "git push",
+            "git store"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Git",
+        "difficulty": "hard",
+        "question": "Which command copies an existing repository?",
+        "options": [
+            "git clone",
+            "git copy",
+            "git fork",
+            "git download"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Python",
+        "difficulty": "easy",
+        "question": "Which keyword creates a function in Python?",
+        "options": [
+            "def",
+            "func",
+            "function",
+            "create"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Python",
+        "difficulty": "easy",
+        "question": "Which symbol starts a comment in Python?",
+        "options": [
+            "//",
+            "#",
+            "/*",
+            "--"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Python",
+        "difficulty": "medium",
+        "question": "Which data type stores a collection of ordered values?",
+        "options": [
+            "list",
+            "integer",
+            "boolean",
+            "float"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "Python",
+        "difficulty": "medium",
+        "question": "Which keyword is used to create a class?",
+        "options": [
+            "object",
+            "class",
+            "struct",
+            "type"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "Python",
+        "difficulty": "hard",
+        "question": "Which library is commonly used for JSON handling in Python?",
+        "options": [
+            "json",
+            "http",
+            "data",
+            "file"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "easy",
+        "question": "Which keyword declares a variable in JavaScript?",
+        "options": [
+            "let",
+            "make",
+            "variable",
+            "define"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "easy",
+        "question": "Which symbol is used for single-line comments in JavaScript?",
+        "options": [
+            "#",
+            "//",
+            "<!--",
+            "**"
+        ],
+        "answer": 1
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "medium",
+        "question": "Which method adds an element to the end of an array?",
+        "options": [
+            "push()",
+            "add()",
+            "append()",
+            "insert()"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "medium",
+        "question": "Which keyword creates a constant variable?",
+        "options": [
+            "const",
+            "constant",
+            "fixed",
+            "static"
+        ],
+        "answer": 0
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "hard",
+        "question": "Which environment runs JavaScript outside the browser?",
+        "options": [
+            "Node.js",
+            "Python",
+            "Docker",
+            "Linux"
         ],
         "answer": 0
     }
