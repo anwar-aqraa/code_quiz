@@ -1,6 +1,14 @@
 import time
 import random
 
+from colorama import (
+    Fore,
+    Style,
+    init
+)
+
+init(autoreset=True)
+
 
 def start_quiz(questions):
 
@@ -18,6 +26,7 @@ def start_quiz(questions):
      "medium": 10,
      "hard": 20
     }
+
     total_questions = len(questions)
 
 
@@ -57,6 +66,7 @@ def start_quiz(questions):
         if elapsed > 15:
 
             print(
+                Fore.YELLOW +
                 "⏰ Time's up!"
             )
             streak = 0
@@ -66,7 +76,10 @@ def start_quiz(questions):
 
         if answer == question["answer"]:
 
-            print("✅ Correct!")
+            print(
+                Fore.GREEN +
+                "✅ Correct!"
+            )
 
             correct_answers += 1
 
@@ -87,25 +100,40 @@ def start_quiz(questions):
 
             if elapsed < 5:
                 points += 5
-                print("⚡ Speed bonus +5")
+                print(
+                    Fore.CYAN +
+                    "⚡ Speed bonus +5"
+                )
 
 
             elif elapsed < 10:
                 points += 2
-                print("⚡ Speed bonus +2")
+                print(
+                    Fore.CYAN +
+                    "⚡ Speed bonus +2"
+                )
 
 
             if streak == 3:
                 points += 5
-                print("🔥 Streak bonus +5")
+                print(
+                    Fore.YELLOW +
+                    "🔥 Streak bonus +5"
+                )
 
             elif streak == 5:
                 points += 10
-                print("🔥🔥 Streak bonus +10")
+                print(
+                    Fore.YELLOW +
+                    "🔥🔥 Streak bonus +10"
+                )
 
             elif streak == 10:
                 points += 20
-                print("🔥🔥🔥 Streak bonus +20")
+                print(
+                    Fore.YELLOW +
+                    "🔥🔥🔥 Streak bonus +20"
+                )
 
 
 
@@ -116,7 +144,10 @@ def start_quiz(questions):
 
         else:
 
-            print("❌ Wrong!")
+            print(
+                Fore.RED +
+                "❌ Wrong!"
+            )
 
             print(
                 f"Correct answer: "
@@ -124,8 +155,10 @@ def start_quiz(questions):
             )
             if streak > 0:
                 print(
+                    Fore.RED +
                     f"💔 Streak broken! You had {streak} correct answers."
                 )
+
 
             streak = 0
 
@@ -137,7 +170,11 @@ def start_quiz(questions):
 
 
     print("\n====================")
-    print("🎮 Quiz Finished!")
+    print(
+        Style.BRIGHT +
+        Fore.MAGENTA +
+        "🎮 Quiz Finished!"
+    )
     print("====================")
 
     print(
