@@ -1,12 +1,38 @@
 [
     {
         "username": "anwar",
-        "total_games": 1,
+        "total_games": 6,
         "best_score": 35,
-        "total_score": 35,
-        "average_score": 35.0,
+        "total_score": 146,
+        "average_score": 24.333333333333332,
         "favorite_category": "Docker",
-        "history": []
+        "history": [
+            {
+                "category": "Docker",
+                "score": 30,
+                "date": "2026-08-05 20:31"
+            },
+            {
+                "category": "Docker",
+                "score": 35,
+                "date": "2026-08-05 21:03"
+            },
+            {
+                "category": "Docker",
+                "score": 0,
+                "date": "2026-08-05 21:04"
+            },
+            {
+                "category": "Docker",
+                "score": 17,
+                "date": "2026-08-05 21:05"
+            },
+            {
+                "category": "Docker",
+                "score": 29,
+                "date": "2026-08-06 13:38"
+            }
+        ]
     },
     {
         "username": "\u0634\u0649\udcd8anwar",

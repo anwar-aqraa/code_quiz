@@ -1,7 +1,12 @@
 import time
+import random
 
 
 def start_quiz(questions):
+
+    questions = questions.copy()
+    random.shuffle(questions)
+
 
     score = 0
     correct_answers = 0
