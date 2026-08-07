@@ -12,6 +12,12 @@ from user import (
     show_history
 )
 
+from admin import (
+    add_question,
+    edit_question,
+    delete_question
+)
+
 from datetime import datetime
 from quiz import start_quiz
 from score import save_score, show_scores, show_statistics
@@ -25,7 +31,8 @@ def show_menu():
     print("4. Categories")
     print("5. High Scores")
     print("6. Statistics")
-    print("7. Exit")
+    print("7. Admin")
+    print("8. Exit")
 
 
 def choose_category(questions):
@@ -88,6 +95,16 @@ def choose_difficulty(questions):
     else:
         return questions
 
+
+
+def admin_menu():
+
+    print("\n====== ADMIN ======")
+
+    print("1. Add Question")
+    print("2. Delete Question")
+    print("3. Edit Question")
+    print("4. Back")
 
 
 
@@ -183,8 +200,44 @@ def main():
 
             show_statistics()
 
-
         elif choice == "7":
+
+            password = input("\nAdmin password: ")
+
+            if password != "admin123":
+                print("❌ Wrong password!")
+                continue
+
+            while True:
+
+                admin_menu()
+
+                admin_choice = input(
+                    "\nChoose option: "
+                )
+
+                if admin_choice == "1":
+
+                    add_question()
+
+                elif admin_choice == "2":
+
+                    delete_question()
+
+                elif admin_choice == "3":
+
+                    edit_question()
+
+                elif admin_choice == "4":
+
+                    break
+
+                else:
+
+                    print("Invalid option!")
+
+
+        elif choice == "8":
 
             print("Bye 👋")
             break

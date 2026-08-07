@@ -348,18 +348,6 @@
         "answer": 0
     },
     {
-        "category": "SQL",
-        "difficulty": "hard",
-        "question": "Which constraint uniquely identifies rows?",
-        "options": [
-            "PRIMARY KEY",
-            "FOREIGN KEY",
-            "UNIQUE TABLE",
-            "IDENTIFIER"
-        ],
-        "answer": 0
-    },
-    {
         "category": "Git",
         "difficulty": "easy",
         "question": "Which command uploads changes to a remote repository?",
