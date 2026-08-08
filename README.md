@@ -138,7 +138,6 @@ Each profile stores information such as:
 * Number of games played
 * Best score
 * Average score
-* Favorite category
 * Quiz history
 
 ## 🎯 Difficulty System
