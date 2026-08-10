@@ -121,7 +121,8 @@ You will see the main menu:
 4. Categories
 5. High Scores
 6. Statistics
-7. Exit
+7. Admin
+8. Exit
 ```
 
 Choose an option and follow the instructions in the terminal.
