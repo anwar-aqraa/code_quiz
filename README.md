@@ -188,6 +188,11 @@ This means the order of questions is different for every game.
 
 CodeQuiz includes an admin mode for managing the question database.
 
+Choose from menu:
+7. Admin
+Enter the default admin password:
+admin123
+
 Admins can:
 
 * Add questions
